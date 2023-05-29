@@ -34,7 +34,7 @@ export default function Home() {
               <Text
                 textAlign={"center"}
                 paddingTop={[35, 35, "150px"]}
-                fontSize={["30px", "26px", "50px"]}
+                fontSize={["28px", "28px", "50px"]}
                 fontWeight="700"
                 color="white"
               >
@@ -61,7 +61,7 @@ export default function Home() {
             </VStack>
           </Center>
         </Box>
-        <Divider borderWidth="3px" borderColor="#204a97" />
+        <Divider borderWidth="2px" borderColor="#204a97" />
         <Scioly ref={ref} text="What is Science Olympiad?" />
       </Box>
     </Box>

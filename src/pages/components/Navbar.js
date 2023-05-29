@@ -12,6 +12,8 @@ import {
 } from "@chakra-ui/react";
 
 export default function Navbar() {
+  const location = window.location.pathname;
+
   return (
     <Box
       className="font"
@@ -24,11 +26,32 @@ export default function Navbar() {
       color="white"
     >
       <HStack justifyContent="space-between">
-        <Box paddingTop={["15px", "15px", "5px"]} paddingLeft="15px">
+        <Box
+          paddingTop={["20px", "20px", "5px"]}
+          paddingLeft="15px"
+          paddingBottom={[0, 0, 2]}
+        >
           <HStack as="a" href="/">
-            <Box borderColor="white" borderWidth={2} borderRadius={100}>
+            <Box
+              display={["initial", "initial", "none"]}
+              borderColor="white"
+              borderWidth={2}
+              borderRadius={100}
+            >
               <img
-                width="70"
+                width={"50"}
+                src="https://cdn.discordapp.com/attachments/691735762538070096/1112542903932293161/NewGNPSLogo120wide.png"
+                alt=""
+              />
+            </Box>
+            <Box
+              display={["none", "none", "initial"]}
+              borderColor="white"
+              borderWidth={2}
+              borderRadius={100}
+            >
+              <img
+                width={"80"}
                 src="https://cdn.discordapp.com/attachments/691735762538070096/1112542903932293161/NewGNPSLogo120wide.png"
                 alt=""
               />
@@ -39,7 +62,17 @@ export default function Navbar() {
               fontSize={["18px", "18px", "28px"]}
               fontWeight="900"
             >
-              Great Neck South Science Olympiad
+              <Text>
+                Great Neck South
+                <Text display={["none", "none", "initial"]}>
+                  {" "}
+                  Science Olympiad
+                </Text>
+              </Text>
+              <Text display={["initial", "initial", "none"]}>
+                {" "}
+                Science Olympiad
+              </Text>
             </Text>
           </HStack>
         </Box>
@@ -90,14 +123,34 @@ export default function Navbar() {
 
         <Box
           paddingRight="20px"
-          paddingTop="10px"
+          paddingTop="0px"
           display={["none", "none", "block"]}
         >
           <HStack spacing="10">
-            <a href="/about">About</a>
-            <a href="/awards">Awards</a>
-            <a href="/sponsors">Sponsors</a>
-            <a href="/contact">Contact</a>
+            <a
+              className={location === "/about" ? "underline" : ""}
+              href="/about"
+            >
+              About
+            </a>
+            <a
+              className={location === "/awards" ? "underline" : ""}
+              href="/awards"
+            >
+              Awards
+            </a>
+            <a
+              className={location === "/sponsors" ? "underline" : ""}
+              href="/sponsors"
+            >
+              Sponsors
+            </a>
+            <a
+              className={location === "/contact" ? "underline" : ""}
+              href="/contact"
+            >
+              Contact
+            </a>
           </HStack>
         </Box>
       </HStack>
