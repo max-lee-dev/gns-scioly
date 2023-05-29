@@ -40,16 +40,15 @@ export default function Home() {
               >
                 Great Neck South High School Science Olympiad
               </Text>
-              <Box paddingTop="400px">
+              <Box paddingTop="400px" opacity="1">
                 <Button
                   onClick={handleClick}
                   fontSize="24px"
                   minH="50px"
                   _hover={{ bg: "#5180c4" }}
                   color="white"
-                  borderRadius="3px"
-                  bg="#204a97"
-                  opacity="1"
+                  borderRadius="5px"
+                  bg="#0c3278"
                 >
                   What is Science Olympiad?
                 </Button>

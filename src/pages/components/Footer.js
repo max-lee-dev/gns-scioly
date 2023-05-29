@@ -1,10 +1,14 @@
 import React from "react";
-import { Box, HStack, VStack, Text } from "@chakra-ui/react";
+import { Center, Box, HStack, VStack, Text } from "@chakra-ui/react";
 
 export default function Footer() {
   return (
-    <Box bg="#204a97" color="#f0f0f0">
-      <Box>h</Box>
+    <Box minH="5vh" bg="#204a97" color="#f0f0f0">
+      <Center>
+        <HStack>
+          <Box>footer xdd</Box>
+        </HStack>
+      </Center>
     </Box>
   );
 }
