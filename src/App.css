@@ -4,6 +4,7 @@
 }
 
 .opacity img {
+  position: relative;
   opacity: 0.55;
 }
 
