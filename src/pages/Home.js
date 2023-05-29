@@ -43,7 +43,7 @@ export default function Home() {
                   {" "}
                   High School
                 </Text>{" "}
-                Science Olympiad
+                <Text>Science Olympiad</Text>
               </Text>
               <Box paddingTop="400px" opacity="1">
                 <Button
