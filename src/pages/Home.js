@@ -1,9 +1,24 @@
-import React from "react";
-import { Box, Center, HStack, VStack, Text } from "@chakra-ui/react";
+import React, { useRef } from "react";
+import Scioly from "./components/Scioly";
+import {
+  Box,
+  Center,
+  HStack,
+  VStack,
+  Text,
+  Button,
+  Divider,
+} from "@chakra-ui/react";
 
 export default function Home() {
+  const ref = useRef(null);
+
+  function handleClick() {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
-    <Box>
+    <Box className="font">
       <Box className="opacity">
         {" "}
         <Center>
@@ -15,18 +30,34 @@ export default function Home() {
             ></img>
             <Center>
               <Text
-                fontSize="64px"
-                fontWeight="500"
-                color="#204a97"
+                fontSize="50px"
+                fontWeight="700"
+                color="white"
                 position="absolute"
                 top="200"
                 zIndex="1"
               >
-                Great Neck South
+                Great Neck South High School Science Olympiad
               </Text>
+              <Button
+                onClick={handleClick}
+                fontSize="24px"
+                minH="50px"
+                _hover={{ bg: "#5180c4" }}
+                color="white"
+                borderRadius="3px"
+                bg="#204a97"
+                position="absolute"
+                top="615"
+                zIndex="1"
+              >
+                What is Science Olympiad?
+              </Button>
             </Center>
           </Box>
         </Center>
+        <Divider borderWidth="3px" borderColor="#204a97" />
+        <Scioly ref={ref} text="What is Science Olympiad?" />
       </Box>
     </Box>
   );
