@@ -11,6 +11,8 @@ import {
   MenuDivider,
 } from "@chakra-ui/react";
 
+import gnpslogo from "./images/gnpslogo.png";
+
 export default function Navbar() {
   const location = window.location.pathname;
 
@@ -39,11 +41,7 @@ export default function Navbar() {
               borderWidth={2}
               borderRadius={100}
             >
-              <img
-                width={"40"}
-                src="https://cdn.discordapp.com/attachments/691735762538070096/1112542903932293161/NewGNPSLogo120wide.png"
-                alt=""
-              />
+              <img width={"40"} alt="" />
             </Box>
             <Box
               display={["none", "none", "initial"]}
@@ -51,11 +49,7 @@ export default function Navbar() {
               borderWidth={2}
               borderRadius={100}
             >
-              <img
-                width={"70"}
-                src="https://cdn.discordapp.com/attachments/691735762538070096/1112542903932293161/NewGNPSLogo120wide.png"
-                alt=""
-              />
+              <img width={"70"} src={gnpslogo} alt="" />
             </Box>
             <Text
               className="title"
