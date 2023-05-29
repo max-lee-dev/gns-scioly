@@ -33,7 +33,7 @@ export default function Home() {
             <VStack>
               <Text
                 textAlign={"center"}
-                paddingTop={[35, 35, "150px"]}
+                paddingTop={[35, 35, "100px"]}
                 fontSize={["28px", "28px", "50px"]}
                 fontWeight="700"
                 color="white"
@@ -45,7 +45,7 @@ export default function Home() {
                 </Text>{" "}
                 <Text>Science Olympiad</Text>
               </Text>
-              <Box paddingTop="400px" opacity="1">
+              <Box paddingTop="350px" opacity="1">
                 <Button
                   onClick={handleClick}
                   fontSize={[15, 15, 20]}

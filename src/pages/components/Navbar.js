@@ -19,19 +19,20 @@ export default function Navbar() {
       className="font"
       as="nav"
       position="sticky"
-      minH="90px"
+      minH="60px"
       fontWeight="400"
       bgColor="#204a97"
-      fontSize="20px"
+      fontSize="18px"
       color="white"
     >
       <HStack justifyContent="space-between">
         <Box
-          paddingTop={["20px", "20px", "5px"]}
+          transition="none"
+          paddingTop={"5px"}
           paddingLeft="15px"
-          paddingBottom={[0, 0, 2]}
+          paddingBottom={["5px", "5px", 2]}
         >
-          <HStack as="a" href="/">
+          <HStack className="title" as="a" href="/">
             <Box
               display={["initial", "initial", "none"]}
               borderColor="white"
@@ -39,7 +40,7 @@ export default function Navbar() {
               borderRadius={100}
             >
               <img
-                width={"50"}
+                width={"40"}
                 src="https://cdn.discordapp.com/attachments/691735762538070096/1112542903932293161/NewGNPSLogo120wide.png"
                 alt=""
               />
@@ -51,16 +52,16 @@ export default function Navbar() {
               borderRadius={100}
             >
               <img
-                width={"80"}
+                width={"70"}
                 src="https://cdn.discordapp.com/attachments/691735762538070096/1112542903932293161/NewGNPSLogo120wide.png"
                 alt=""
               />
             </Box>
             <Text
+              className="title"
               paddingLeft="5px"
-              className="font"
-              fontSize={["18px", "18px", "28px"]}
-              fontWeight="900"
+              fontSize={["16px", "16px", "24px"]}
+              fontWeight={["600", "600", "900"]}
             >
               <Text>
                 Great Neck South
@@ -78,7 +79,7 @@ export default function Navbar() {
         </Box>
 
         <Box
-          paddingTop="20px"
+          paddingTop="5px"
           paddingRight="20px"
           opacity="1"
           display={["block", "block", "none"]}
