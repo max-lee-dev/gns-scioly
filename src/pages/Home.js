@@ -24,26 +24,32 @@ export default function Home() {
         {" "}
         <Box
           backgroundSize="cover"
-          minH="93vh"
-          opacity={0.65}
+          minH={["100vh", "90vh", "92vh"]}
+          opacity={[1, 1, 0.65]}
           borderColor="transparent"
           backgroundImage={scioly}
         >
           <Center>
             <VStack>
               <Text
-                paddingTop="150px"
-                fontSize="50px"
+                textAlign={"center"}
+                paddingTop={[35, 35, "150px"]}
+                fontSize={["30px", "26px", "50px"]}
                 fontWeight="700"
                 color="white"
               >
-                Great Neck South High School Science Olympiad
+                Great Neck South
+                <Text display={["none", "none", "initial"]}>
+                  {" "}
+                  High School
+                </Text>{" "}
+                Science Olympiad
               </Text>
               <Box paddingTop="400px" opacity="1">
                 <Button
                   onClick={handleClick}
-                  fontSize="24px"
-                  minH="50px"
+                  fontSize={[15, 15, 20]}
+                  minH={[10, 10, 12]}
                   _hover={{ bg: "#5180c4" }}
                   color="white"
                   borderRadius="5px"
