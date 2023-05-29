@@ -41,7 +41,7 @@ export default function Navbar() {
               borderWidth={2}
               borderRadius={100}
             >
-              <img width={"40"} alt="" />
+              <img width={"40"} src={gnpslogo} alt="" />
             </Box>
             <Box
               display={["none", "none", "initial"]}
