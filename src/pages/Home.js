@@ -19,43 +19,44 @@ export default function Home() {
 
   return (
     <Box className="font">
-      <Box className="opacity">
+      <Box>
         {" "}
-        <Center>
-          <Box position="relative">
-            <img
-              width="2080"
-              src="https://cdn.discordapp.com/attachments/691735762538070096/1112540429339070524/AJFCJaW7jDHLXa8jxVlh79-T7z5KuXD7yvjrZbwZ_eTo-iHnGgtsA7UlXcVT0JuL4jS5nFDM154SIvTHMTM4MSyxlfhtzwyC9h6jMYjBmg8oy9X82sYmnsvRSEpQY0HRhipR3IHtV4LQkNJ8tSD5gO8psfsSw1662-h937-s-no.png"
-              alt=""
-            ></img>
-            <Center>
+        <Box
+          backgroundSize="cover"
+          minH="93vh"
+          opacity={0.65}
+          borderColor="transparent"
+          backgroundImage={
+            "https://cdn.discordapp.com/attachments/691735762538070096/1112540429339070524/AJFCJaW7jDHLXa8jxVlh79-T7z5KuXD7yvjrZbwZ_eTo-iHnGgtsA7UlXcVT0JuL4jS5nFDM154SIvTHMTM4MSyxlfhtzwyC9h6jMYjBmg8oy9X82sYmnsvRSEpQY0HRhipR3IHtV4LQkNJ8tSD5gO8psfsSw1662-h937-s-no.png"
+          }
+        >
+          <Center>
+            <VStack>
               <Text
+                paddingTop="150px"
                 fontSize="50px"
                 fontWeight="700"
                 color="white"
-                position="absolute"
-                top="200"
-                zIndex="1"
               >
                 Great Neck South High School Science Olympiad
               </Text>
-              <Button
-                onClick={handleClick}
-                fontSize="24px"
-                minH="50px"
-                _hover={{ bg: "#5180c4" }}
-                color="white"
-                borderRadius="3px"
-                bg="#204a97"
-                position="absolute"
-                top="615"
-                zIndex="1"
-              >
-                What is Science Olympiad?
-              </Button>
-            </Center>
-          </Box>
-        </Center>
+              <Box paddingTop="400px">
+                <Button
+                  onClick={handleClick}
+                  fontSize="24px"
+                  minH="50px"
+                  _hover={{ bg: "#5180c4" }}
+                  color="white"
+                  borderRadius="3px"
+                  bg="#204a97"
+                  opacity="1"
+                >
+                  What is Science Olympiad?
+                </Button>
+              </Box>
+            </VStack>
+          </Center>
+        </Box>
         <Divider borderWidth="3px" borderColor="#204a97" />
         <Scioly ref={ref} text="What is Science Olympiad?" />
       </Box>
