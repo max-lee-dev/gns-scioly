@@ -1,12 +1,15 @@
 import React from "react";
-import { Center, Box, HStack, VStack, Text } from "@chakra-ui/react";
+import { Center, Box, HStack, Stack, Text } from "@chakra-ui/react";
 
 export default function Footer() {
   return (
-    <Box minH="10vh" bg="#204a97" color="#f0f0f0">
-      <HStack>
+    <Box paddingTop="10px" minH="10vh" bg="#204a97" color="#f0f0f0">
+      <Stack
+        direction={["column", "column", "row"]}
+        justifyContent="space-between"
+      >
         <Center>
-          <Box paddingTop="10px" paddingLeft="50px">
+          <Box paddingLeft={[0, 0, 10]} paddingTop="10px">
             <Text>Great Neck South High School</Text>
             <Box
               as="a"
@@ -17,7 +20,11 @@ export default function Footer() {
             </Box>
           </Box>
         </Center>
-      </HStack>
+        <Center>
+          {" "}
+          <Text paddingRight={10}> greatnecksouthscioly@gmail.com</Text>
+        </Center>
+      </Stack>
     </Box>
   );
 }

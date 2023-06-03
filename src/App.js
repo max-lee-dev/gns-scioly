@@ -8,12 +8,22 @@ import Awards from "./pages/Awards";
 
 import Footer from "./pages/components/Footer";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
-import { ChakraProvider, Box } from "@chakra-ui/react";
+import { ChakraProvider, Box, extendTheme } from "@chakra-ui/react";
+
+const theme = extendTheme({
+  colors: {
+    brand: {
+      100: "#204A97",
+      // ...
+      900: "#1a202c",
+    },
+  },
+});
 
 function App() {
   return (
     <Router>
-      <ChakraProvider className="font">
+      <ChakraProvider className="font" theme={theme}>
         <Navbar />
         <Box minHeight="96vh" bg="#f2f2f2" color="white">
           <Routes>

@@ -62,7 +62,20 @@ export default function Home() {
           </Center>
         </Box>
         <Divider borderWidth="2px" borderColor="#204a97" />
-        <Scioly ref={ref} text="What is Science Olympiad?" />
+        <Box minH="70vh">
+          <Scioly ref={ref} text="What is Science Olympiad?" />
+          <Box paddingTop="50px" color="black" paddingLeft="20px" width="50%">
+            <Text fontSize="40px">Who are we?</Text>
+            <Text fontSize="20px">
+              The Great Neck South Science Olympiad club each year prepare for
+              and compete in various competitions. Through each competition, we
+              develop our knowledge and skill and prepare for regional, state,
+              and national competitions. Our club consists of three teams with
+              15 members each and provides students with an opportunity to
+              explore the world of science.
+            </Text>
+          </Box>
+        </Box>
       </Box>
     </Box>
   );
