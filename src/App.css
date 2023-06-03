@@ -16,8 +16,8 @@
 
 .underline {
   text-decoration: underline;
-  text-underline-offset: 0.35em;
-  text-decoration-thickness: 3px;
+  text-underline-offset: 0.40em;
+  text-decoration-thickness: 2px;
 }
 
 a:not(.title)::after {
