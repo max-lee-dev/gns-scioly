@@ -57,6 +57,8 @@ export default function Home() {
     borderRadius: "15px",
   };
 
+  
+
   return (
     <Box className="font">
       <Box>

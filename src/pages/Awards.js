@@ -1,5 +1,14 @@
 import React from "react";
-import { Box, Text, Center, VStack, extendTheme } from "@chakra-ui/react";
+import {
+  Box,
+  Text,
+  Center,
+  VStack,
+  HStack,
+  extendTheme,
+  Divider,
+} from "@chakra-ui/react";
+import Bullet from "./components/Bullet";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -7,146 +16,182 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 export default function Awards() {
   return (
-    <Box className="font" color="black">
+    <Box className="font" color="black" minH="150vh">
       <Center>
         <Box>
           <Center>
             <VStack>
-              <Text fontSize="40px">2022-2023</Text>
+              <Text fontWeight={600} fontSize="40px">
+                2022-2023
+              </Text>
               <Box>
-                <VerticalTimeline
-                  animate={true}
-                  layout={"2-columns"}
-                  lineColor="#204A97"
-                >
-                  <VerticalTimelineElement
-                    className=""
-                    contentArrowStyle={{
-                      borderRight: "7px solid  rgb(33, 150, 243)",
-                    }}
-                    contentStyle={{
-                      background: "rgb(33, 150, 243)",
-                      width: "50%",
-                    }}
+                <Center>
+                  <Box>
+                    <Bullet pos={200} margin={12} />
+                    <Box
+                      fontSize="30px"
+                      paddingLeft="25px"
+                      position="absolute"
+                      top="180"
+                    >
+                      <HStack>
+                        <Box>Battle at Valley Forge </Box>
+                        <Box paddingTop="10px" color="silver.100">
+                          <ion-icon name="trophy"></ion-icon>
+                        </Box>
+                      </HStack>
+                      <Text fontWeight="200" paddingRight="5px" fontSize="18px">
+                        December 17, 2022
+                      </Text>
+                      <Text fontWeight="300" fontSize="20px">
+                        {" "}
+                        2nd Place Overall
+                      </Text>
+                    </Box>
+                  </Box>
+                </Center>
+              </Box>
+              <Box>
+                <Center>
+                  <Bullet pos={400} />
+                  <Box
+                    fontSize="30px"
+                    top="385"
+                    paddingRight="400px"
+                    position="absolute"
                   >
-                    <h3 className="vertical-timeline-element-title">
-                      Creative Director
-                    </h3>
-                    <h4 className="vertical-timeline-element-subtitle">
-                      Miami, FL
-                    </h4>
-                    <p>
-                      Creative Direction, User Experience, Visual Design,
-                      Project Management, Team Leading
-                    </p>
-                  </VerticalTimelineElement>
-                  <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    date="2010 - 2011"
-                    iconStyle={{
-                      background: "rgb(33, 150, 243)",
-                      color: "#fff",
-                    }}
+                    <HStack>
+                      <Box paddingTop="10px" color="bronze.100">
+                        <ion-icon name="trophy"></ion-icon>
+                      </Box>
+                      <Box>Long Island Invitational</Box>
+                    </HStack>
+                    <Text
+                      textAlign="right"
+                      fontWeight="200"
+                      paddingRight="5px"
+                      fontSize="18px"
+                    >
+                      January 7, 2023
+                    </Text>
+                    <Text textAlign="right" fontWeight="300" fontSize="20px">
+                      {" "}
+                      3rd Place Overall
+                    </Text>
+                  </Box>
+                </Center>
+              </Box>
+              <Box>
+                <Center>
+                  <Bullet pos={600} margin={-5} />
+                  <Box
+                    fontSize="30px"
+                    top="585"
+                    paddingLeft="220px"
+                    position="absolute"
                   >
-                    <h3 className="vertical-timeline-element-title">
-                      Art Director
-                    </h3>
-                    <h4 className="vertical-timeline-element-subtitle">
-                      San Francisco, CA
-                    </h4>
-                    <p>
-                      Creative Direction, User Experience, Visual Design, SEO,
-                      Online Marketing
-                    </p>
-                  </VerticalTimelineElement>
-                  <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    date="2008 - 2010"
-                    iconStyle={{
-                      background: "rgb(33, 150, 243)",
-                      color: "#fff",
-                    }}
+                    <HStack>
+                      <Box>Regionals</Box>
+                      <Box paddingTop="10px" color="gold.100">
+                        <ion-icon name="trophy"></ion-icon>
+                      </Box>
+                    </HStack>
+                    <Text
+                      textAlign="left"
+                      fontWeight="200"
+                      paddingRight="5px"
+                      fontSize="18px"
+                    >
+                      February 4, 2023
+                    </Text>
+                    <Text fontWeight="300" fontSize="20px">
+                      {" "}
+                      1st Place Overall
+                    </Text>
+                  </Box>
+                </Center>
+              </Box>
+              <Box>
+                <Center>
+                  <Bullet pos={800} />
+                  <Box
+                    fontSize="30px"
+                    top="785"
+                    paddingRight="175px"
+                    position="absolute"
                   >
-                    <h3 className="vertical-timeline-element-title">
-                      Web Designer
-                    </h3>
-                    <h4 className="vertical-timeline-element-subtitle">
-                      Los Angeles, CA
-                    </h4>
-                    <p>User Experience, Visual Design</p>
-                  </VerticalTimelineElement>
-                  <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    date="2006 - 2008"
-                    iconStyle={{
-                      background: "rgb(33, 150, 243)",
-                      color: "#fff",
-                    }}
+                    <HStack>
+                      <Box paddingTop="10px" color="gold.100">
+                        <ion-icon name="trophy"></ion-icon>
+                      </Box>
+                      <Box>BirdSO</Box>
+                    </HStack>
+                    <Text
+                      textAlign="left"
+                      fontWeight="200"
+                      paddingRight="25px"
+                      fontSize="18px"
+                    >
+                      February 11-18, 2023
+                    </Text>
+                    <Text fontWeight="300" fontSize="20px">
+                      {" "}
+                      1st Place Overall
+                    </Text>
+                  </Box>
+                </Center>
+              </Box>
+              <Box>
+                <Center>
+                  <Bullet pos={1000} margin={-2} />
+                  <Box
+                    fontSize="30px"
+                    top="985"
+                    paddingLeft="330px"
+                    position="absolute"
                   >
-                    <h3 className="vertical-timeline-element-title">
-                      Web Designer
-                    </h3>
-                    <h4 className="vertical-timeline-element-subtitle">
-                      San Francisco, CA
-                    </h4>
-                    <p>User Experience, Visual Design</p>
-                  </VerticalTimelineElement>
-                  <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="April 2013"
-                    iconStyle={{
-                      background: "rgb(233, 30, 99)",
-                      color: "#fff",
-                    }}
+                    <HStack>
+                      <Box>UPenn Invitational</Box>
+                    </HStack>
+                    <Text
+                      fontWeight="200"
+                      paddingRight="5px"
+                      fontSize="18px"
+                      textAlign="left"
+                    >
+                      February 18, 2023
+                    </Text>
+                    <Text fontWeight="300" fontSize="20px">
+                      {" "}
+                      7th Place Overall
+                    </Text>
+                  </Box>
+                </Center>
+              </Box>
+              <Box>
+                <Center>
+                  <Bullet pos={1225} margin={-10000} />
+                  <Box
+                    fontSize="30px"
+                    top="1210"
+                    paddingRight="175px"
+                    position="absolute"
                   >
-                    <h3 className="vertical-timeline-element-title">
-                      Content Marketing for Web, Mobile and Social Media
-                    </h3>
-                    <h4 className="vertical-timeline-element-subtitle">
-                      Online Course
-                    </h4>
-                    <p>Strategy, Social Media</p>
-                  </VerticalTimelineElement>
-                  <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="November 2012"
-                    iconStyle={{
-                      background: "rgb(233, 30, 99)",
-                      color: "#fff",
-                    }}
-                  >
-                    <h3 className="vertical-timeline-element-title">
-                      Agile Development Scrum Master
-                    </h3>
-                    <h4 className="vertical-timeline-element-subtitle">
-                      Certification
-                    </h4>
-                    <p>Creative Direction, User Experience, Visual Design</p>
-                  </VerticalTimelineElement>
-                  <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="2002 - 2006"
-                    iconStyle={{
-                      background: "rgb(233, 30, 99)",
-                      color: "#fff",
-                    }}
-                  >
-                    <h3 className="vertical-timeline-element-title">
-                      Bachelor of Science in Interactive Digital Media Visual
-                      Imaging
-                    </h3>
-                    <h4 className="vertical-timeline-element-subtitle">
-                      Bachelor Degree
-                    </h4>
-                    <p>Creative Direction, Visual Design</p>
-                  </VerticalTimelineElement>
-                  <VerticalTimelineElement
-                    iconStyle={{
-                      background: "rgb(16, 204, 82)",
-                      color: "#fff",
-                    }}
-                  />
-                </VerticalTimeline>
+                    <HStack>
+                      <Box paddingTop="10px" color="bronze.100">
+                        <ion-icon name="trophy"></ion-icon>
+                      </Box>
+                      <Box>States</Box>
+                    </HStack>
+                    <Text paddingRight="5px" textAlign="left" fontSize="16px">
+                      March 17-18, 2023
+                    </Text>
+                    <Text fontWeight="300" fontSize="20px">
+                      {" "}
+                      3rd Place Overall
+                    </Text>
+                  </Box>
+                </Center>
               </Box>
             </VStack>
           </Center>

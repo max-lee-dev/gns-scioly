@@ -17,6 +17,15 @@ const theme = extendTheme({
       // ...
       900: "#1a202c",
     },
+    gold: {
+      100: "#BBAA10",
+    },
+    silver: {
+      100: "#C0C0C0",
+    },
+    bronze: {
+      100: "#CD7F32",
+    },
   },
 });
 
