@@ -20,7 +20,7 @@ export default function Awards() {
                   lineColor="#204A97"
                 >
                   <VerticalTimelineElement
-                    className="testTimelineElement"
+                    className=""
                     contentArrowStyle={{
                       borderRight: "7px solid  rgb(33, 150, 243)",
                     }}
