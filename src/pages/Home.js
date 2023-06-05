@@ -122,7 +122,7 @@ export default function Home() {
           </Box>
           <Divider borderWidth="2px" borderColor="#204a97" />
           <Box minH="85vh">
-            <Box className="hidden">
+            <Box paddingLeft="40px" className="hidden">
               <Scioly ref={ref} text="What is Science Olympiad?" />
             </Box>
             <Stack direction={["column", "column", "row"]}>
@@ -130,7 +130,8 @@ export default function Home() {
                 className="hidden"
                 color="black"
                 paddingBottom="70px"
-                paddingLeft="20px"
+                paddingTop="10px"
+                paddingLeft="60px"
                 width={["100%", "100%", "45%"]}
               >
                 <Text fontSize="40px">Who are we?</Text>
@@ -144,7 +145,11 @@ export default function Home() {
                 </Text>
               </Box>
 
-              <Box width={["100%", "100%", "50%"]}>
+              <Box
+                paddingLeft="40px"
+                paddingTop="60px"
+                width={["100%", "100%", "50%"]}
+              >
                 <Slide easing="ease">
                   {slideImages.map((each, index) => (
                     <div key={index} className="each-slide">
