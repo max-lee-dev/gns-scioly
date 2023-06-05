@@ -10,12 +10,11 @@ import {
 
 export default function Bullet({ pos, margin }) {
   return (
-    <Box
-      transition="margin .1s ease-in-out"
-      _hover={{ mb: "2", mt: "-2", boxShadow: "lg" }}
-    >
+    <Box>
       <Center>
         <Divider
+          transition="width .1s ease-in-out"
+          _hover={{ width: "2", boxShadow: "lg" }}
           marginTop={margin}
           marginRight="1px"
           orientation={"vertical"}

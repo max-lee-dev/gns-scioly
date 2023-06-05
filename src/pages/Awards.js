@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Component2022 from "./components/Component2022";
 import {
   Box,
   Text,
@@ -15,6 +16,23 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 export default function Awards() {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll(".hidden");
+
+    hiddenElements.forEach((element) => {
+      observer.observe(element);
+    });
+  }, []);
   return (
     <Box className="font" color="black" minH="150vh">
       <Center>
@@ -40,13 +58,19 @@ export default function Awards() {
                           <ion-icon name="trophy"></ion-icon>
                         </Box>
                       </HStack>
-                      <Text fontWeight="200" paddingRight="5px" fontSize="18px">
-                        December 17, 2022
-                      </Text>
-                      <Text fontWeight="300" fontSize="20px">
-                        {" "}
-                        2nd Place Overall
-                      </Text>
+                      <Box>
+                        <Text
+                          fontWeight="200"
+                          paddingRight="5px"
+                          fontSize="18px"
+                        >
+                          December 17, 2022
+                        </Text>
+                        <Text fontWeight="300" fontSize="20px">
+                          {" "}
+                          2nd Place Overall
+                        </Text>
+                      </Box>
                     </Box>
                   </Box>
                 </Center>
@@ -57,7 +81,7 @@ export default function Awards() {
                   <Box
                     fontSize="30px"
                     top="385"
-                    paddingRight="400px"
+                    paddingRight={["-5", "-5", "400px"]}
                     position="absolute"
                   >
                     <HStack>
@@ -183,7 +207,12 @@ export default function Awards() {
                       </Box>
                       <Box>States</Box>
                     </HStack>
-                    <Text paddingRight="5px" textAlign="left" fontSize="16px">
+                    <Text
+                      fontWeight="200"
+                      paddingRight="5px"
+                      textAlign="left"
+                      fontSize="18px"
+                    >
                       March 17-18, 2023
                     </Text>
                     <Text fontWeight="300" fontSize="20px">
@@ -193,6 +222,7 @@ export default function Awards() {
                   </Box>
                 </Center>
               </Box>
+              <Component2022 />
             </VStack>
           </Center>
         </Box>

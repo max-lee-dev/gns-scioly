@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import scioly from "./components/images/scioly-thumbnail.png";
 import Scioly from "./components/Scioly";
 import "react-slideshow-image/dist/styles.css";
@@ -48,6 +48,24 @@ export default function Home() {
     },
   ];
 
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll(".hidden");
+
+    hiddenElements.forEach((element) => {
+      observer.observe(element);
+    });
+  }, []);
+
   const divStyle = {
     display: "flex",
     alignItems: "center",
@@ -56,8 +74,6 @@ export default function Home() {
     height: "600px",
     borderRadius: "15px",
   };
-
-  
 
   return (
     <Box className="font">
@@ -104,9 +120,12 @@ export default function Home() {
         </Box>
         <Divider borderWidth="2px" borderColor="#204a97" />
         <Box minH="85vh">
-          <Scioly ref={ref} text="What is Science Olympiad?" />
+          <Box className="hidden">
+            <Scioly ref={ref} text="What is Science Olympiad?" />
+          </Box>
           <Stack direction={["column", "column", "row"]}>
             <Box
+              className="hidden"
               color="black"
               paddingBottom="70px"
               paddingLeft="20px"
