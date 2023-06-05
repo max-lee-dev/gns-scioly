@@ -13,8 +13,6 @@ export default function Bullet({ pos, margin }) {
     <Box>
       <Center>
         <Divider
-          transition="width .1s ease-in-out"
-          _hover={{ width: "2", boxShadow: "lg" }}
           marginTop={margin}
           marginRight="1px"
           orientation={"vertical"}

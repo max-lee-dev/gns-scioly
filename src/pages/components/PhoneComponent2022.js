@@ -10,7 +10,7 @@ import {
   Divider,
 } from "@chakra-ui/react";
 
-export default function Component2022() {
+export default function PhoneComponent2022() {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -29,7 +29,7 @@ export default function Component2022() {
     });
   }, []);
   return (
-    <VStack>
+    <VStack paddingLeft="20px" alignItems={"flex-start"}>
       <Text
         className="hidden"
         paddingTop="150px"
@@ -45,7 +45,7 @@ export default function Component2022() {
           <Box
             fontSize="30px"
             top="1485"
-            paddingLeft="215px"
+            paddingLeft="245px"
             position="absolute"
           >
             <HStack>
@@ -59,7 +59,12 @@ export default function Component2022() {
             >
               May 14, 2022
             </Text>
-            <Text textAlign="left" fontWeight="300" fontSize="20px">
+            <Text
+              minW="200px"
+              textAlign="left"
+              fontWeight="300"
+              fontSize="20px"
+            >
               {" "}
               18th Place Overall
             </Text>
@@ -72,24 +77,30 @@ export default function Component2022() {
           <Box
             fontSize="30px"
             top="1685"
-            paddingRight="215px"
+            paddingLeft="245px"
             position="absolute"
           >
             <HStack>
+              <Box>States</Box>
               <Box paddingTop="10px" color="silver.100">
                 <ion-icon name="trophy"></ion-icon>
               </Box>
-              <Box>States</Box>
             </HStack>
             <Text
               fontWeight="200"
               paddingRight="5px"
-              textAlign="right"
+              textAlign="left"
               fontSize="18px"
+              minW="200px"
             >
               March 18-19, 2022
             </Text>
-            <Text textAlign="right" fontWeight="300" fontSize="20px">
+            <Text
+              minW="200px"
+              textAlign="left"
+              fontWeight="300"
+              fontSize="20px"
+            >
               {" "}
               2nd Place Overall
             </Text>
