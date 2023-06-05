@@ -4,6 +4,8 @@ import Section from "./components/Section";
 import Component2023 from "./components/Component2023";
 import PhoneComponent2023 from "./components/PhoneComponent2023";
 import PhoneComponent2022 from "./components/PhoneComponent2022";
+import PhoneComponent2021 from "./components/PhoneComponent2021";
+import Component2021 from "./components/Component2021";
 import {
   Box,
   Text,
@@ -21,15 +23,17 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 export default function Awards() {
   return (
-    <Box className="font" color="black" minH={["300vh", "220vh", "200vh"]}>
+    <Box className="font" color="black" minH={["410vh", "410vh", "280vh"]}>
       <Box display={["none", "none", "block"]}>
         <Component2023 />
 
         <Component2022 />
+        <Component2021 />
       </Box>
       <Box display={["block", "block", "none"]}>
         <PhoneComponent2023 />
         <PhoneComponent2022 />
+        <PhoneComponent2021 />
       </Box>
     </Box>
   );

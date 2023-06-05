@@ -122,12 +122,7 @@ export default function PhoneComponent2022() {
                 <ion-icon name="trophy"></ion-icon>
               </Box>
             </HStack>
-            <Text
-              fontWeight="200"
-              paddingLeft="5px"
-              textAlign="left"
-              fontSize="18px"
-            >
+            <Text fontWeight="200" textAlign="left" fontSize="18px">
               February 5, 2022
             </Text>
             <Text textAlign="left" fontWeight="300" fontSize="20px">

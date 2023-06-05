@@ -96,7 +96,7 @@ export default function Component2023() {
           <Box
             fontSize="30px"
             top="585"
-            paddingLeft="180px"
+            paddingLeft="240px"
             position="absolute"
           >
             <HStack>
@@ -106,6 +106,7 @@ export default function Component2023() {
               </Box>
             </HStack>
             <Text
+              minW="200px"
               textAlign="left"
               fontWeight="200"
               paddingRight="5px"

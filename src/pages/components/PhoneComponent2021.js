@@ -10,7 +10,7 @@ import {
   Divider,
 } from "@chakra-ui/react";
 
-export default function Component2022() {
+export default function PhoneComponent2022() {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -29,7 +29,7 @@ export default function Component2022() {
     });
   }, []);
   return (
-    <VStack>
+    <VStack paddingLeft="20px" alignItems={"flex-start"}>
       <Text
         className="hidden"
         paddingTop="150px"
@@ -37,71 +37,72 @@ export default function Component2022() {
         color="brand.900"
         fontSize="50px"
       >
-        2021-2022
+        2020-2021
       </Text>
       <Box>
         <Center>
-          <Bullet pos={1500} margin={30} />
+          <Bullet pos={2190} margin={30} />
           <Box
             fontSize="30px"
-            top="1485"
-            paddingLeft="215px"
+            top="2180"
+            paddingLeft="245px"
             position="absolute"
           >
             <HStack>
               <Box>Nationals</Box>
             </HStack>
             <Text
+              minW="200px"
               fontWeight="200"
               paddingRight="5px"
               textAlign="left"
               fontSize="18px"
             >
-              May 14, 2022
+              May 17-22, 2021
             </Text>
             <Text textAlign="left" fontWeight="300" fontSize="20px">
               {" "}
-              18th Place Overall
+              19th Place Overall
             </Text>
           </Box>
         </Center>
       </Box>
       <Box>
         <Center>
-          <Bullet pos={1700} margin={0} />
+          <Bullet pos={2390} margin={0} />
           <Box
             fontSize="30px"
-            top="1685"
-            paddingRight="215px"
+            top="2375"
+            paddingLeft="245px"
             position="absolute"
           >
             <HStack>
-              <Box paddingLeft="25px" paddingTop="10px" color="silver.100">
+              <Text alignText="left">States</Text>
+              <Box paddingLeft="20px" paddingTop="10px" color="gold.100">
                 <ion-icon name="trophy"></ion-icon>
               </Box>
-              <Box>States</Box>
             </HStack>
-            <Text
-              fontWeight="200"
-              paddingRight="5px"
-              textAlign="right"
-              fontSize="18px"
-            >
-              March 18-19, 2022
+            <Text fontWeight="200" textAlign="left" fontSize="18px">
+              April 10, 2021
             </Text>
-            <Text textAlign="right" fontWeight="300" fontSize="20px">
+            <Text
+              minW="200px"
+              textAlign="left"
+              fontWeight="300"
+              fontSize="20px"
+            >
               {" "}
-              2nd Place Overall
+              1st Place Overall
             </Text>
           </Box>
         </Center>
       </Box>
       <Box>
         <Center>
-          <Bullet pos={1905} margin={-10000} />
+          <Bullet pos={2600} margin={-10000} />
           <Box
             fontSize="30px"
-            top="1890"
+            top="2585"
             marginLeft="220px"
             position="absolute"
           >
@@ -111,13 +112,8 @@ export default function Component2022() {
                 <ion-icon name="trophy"></ion-icon>
               </Box>
             </HStack>
-            <Text
-              fontWeight="200"
-              paddingLeft="5px"
-              textAlign="left"
-              fontSize="18px"
-            >
-              February 5, 2022
+            <Text fontWeight="200" textAlign="left" fontSize="18px">
+              March 20, 2021
             </Text>
             <Text textAlign="left" fontWeight="300" fontSize="20px">
               {" "}
