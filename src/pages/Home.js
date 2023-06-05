@@ -135,7 +135,7 @@ export default function Home() {
                 width={["100%", "100%", "45%"]}
               >
                 <Text fontSize="40px">Who are we?</Text>
-                <Text fontSize="20px">
+                <Text fontSize="26px">
                   The Great Neck South Science Olympiad club each year prepare
                   for and compete in various competitions. Through each
                   competition, we develop our knowledge and skill and prepare

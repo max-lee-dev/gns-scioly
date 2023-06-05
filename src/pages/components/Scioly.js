@@ -7,7 +7,7 @@ function Scioly({ text }, ref) {
         <Box color="black" paddingTop="24px">
           <Text fontSize="40px">What is Science Olympiad?</Text>
           <Box>
-            <Text paddingRight="5px" paddingTop="10px" fontSize="20px">
+            <Text paddingRight="5px" paddingTop="10px" fontSize="26px">
               Science Olympiad is a team-based competition where students
               demonstrate their understanding of STEM (Science, Technology,
               Engineering, and Math) topics. Students challenge themselves in 23
