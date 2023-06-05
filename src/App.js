@@ -34,7 +34,7 @@ function App() {
     <Router>
       <ChakraProvider className="font" theme={theme}>
         <Navbar />
-        <Box minHeight="96vh" bg="#f2f2f2" color="white">
+        <Box minHeight="100vh" bg="#f2f2f2" color="white">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/sponsors" element={<Sponsors />} />

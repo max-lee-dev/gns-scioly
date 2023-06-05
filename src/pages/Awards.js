@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Component2022 from "./components/Component2022";
+import Section from "./components/Section";
 import {
   Box,
   Text,
