@@ -90,6 +90,11 @@ export default function Navbar() {
             </MenuButton>
             <MenuList color="black" zIndex="101">
               <MenuItem>
+                <Box minW="100%" as="a" href="/">
+                  Home
+                </Box>
+              </MenuItem>
+              <MenuItem>
                 <Box minW="100%" as="a" href="/about">
                   About
                 </Box>
@@ -122,6 +127,9 @@ export default function Navbar() {
           display={["none", "none", "block"]}
         >
           <HStack spacing="10">
+            <a className={location === "/" ? "underline" : ""} href="/">
+              Home
+            </a>
             <a
               className={location === "/about" ? "underline" : ""}
               href="/about"

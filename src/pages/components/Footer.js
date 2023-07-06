@@ -1,5 +1,5 @@
 import React from "react";
-import { Center, Box, HStack, Stack, Text } from "@chakra-ui/react";
+import { Center, HStack, Box, VStack, Stack, Text } from "@chakra-ui/react";
 
 export default function Footer() {
   return (
@@ -21,8 +21,37 @@ export default function Footer() {
           </Box>
         </Center>
         <Center>
-          {" "}
-          <Text paddingRight={10}> greatnecksouthscioly@gmail.com</Text>
+          <VStack textAlign={"left"}>
+            {" "}
+            <Text fontWeight={600} width="100%">
+              {" "}
+              Contact us{" "}
+            </Text>
+            <HStack>
+              <Box fontSize="24px">
+                <ion-icon name="mail-outline"></ion-icon>
+              </Box>
+              <Text paddingBottom="5px" paddingRight={10}>
+                {" "}
+                greatnecksouthscioly@gmail.com
+              </Text>
+            </HStack>
+            <Text width="100%" paddingRight={10}>
+              {" "}
+              <HStack>
+                <Box fontSize="24px">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </Box>
+                <Text
+                  as="a"
+                  href="https://www.instagram.com/gns.scioly/"
+                  paddingBottom="5px"
+                >
+                  gns.scioly
+                </Text>
+              </HStack>
+            </Text>
+          </VStack>
         </Center>
       </Stack>
     </Box>
