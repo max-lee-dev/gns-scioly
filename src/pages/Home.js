@@ -42,10 +42,6 @@ const slideImages = [
     caption: "Slide 6",
   },
   {
-    url: "https://cdn.discordapp.com/attachments/691735762538070096/1125233716311113788/IMG_2858.png",
-    caption: "Slide 7",
-  },
-  {
     url: "https://cdn.discordapp.com/attachments/691735762538070096/1125233865284390932/IMG_0745.jpg",
     caption: "Slide 8",
   },

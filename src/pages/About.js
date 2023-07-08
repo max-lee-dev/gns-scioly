@@ -1,6 +1,15 @@
 import React, { useEffect } from "react";
-import { Box, Stack, HStack, VStack, Text, Center } from "@chakra-ui/react";
+import {
+  Box,
+  Stack,
+  Button,
+  HStack,
+  VStack,
+  Text,
+  Center,
+} from "@chakra-ui/react";
 import Scioly from "./components/Scioly";
+import sciolylogo from "./components/images/sciolylogo.png";
 
 import gnshome from "./components/images/gnshome.png";
 
@@ -23,38 +32,57 @@ export default function About() {
     });
   }, []);
   return (
-    <Box color="black">
-      <Box minH="85vh">
-        <Box paddingLeft="40px" className="hidden">
-          <Scioly text="What is Science Olympiad?" />
-        </Box>
-        <Stack direction={["column", "column", "row"]}>
-          <Box
-            className="hidden"
-            color="black"
-            paddingBottom="70px"
-            paddingTop="10px"
-            paddingLeft="60px"
-            width={["100%", "100%", "45%"]}
-          ></Box>
-          <Box
-            paddingLeft="40px"
-            paddingTop="60px"
-            width={["100%", "100%", "50%"]}
+    <Box className="font" color="black">
+      <Center>
+        <Box minH="110vh" width="80%">
+          <Stack
+            justifyContent="space-between"
+            direction={["column", "column", "row"]}
           >
-            <img src={gnshome} alt="gnshome" width="100%" />
-          </Box>
-        </Stack>
-        <Text fontSize="40px">Who are we?</Text>
-        <Text fontSize="26px">
-          The Great Neck South Science Olympiad club each year prepare for and
-          compete in various competitions. Through each competition, we develop
-          our knowledge and skill and prepare for regional, state, and national
-          competitions. Our club consists of three teams with 15 members each
-          and provides students with an opportunity to explore the world of
-          science.
-        </Text>
-      </Box>
+            <Box width="47%" className="hidden">
+              <Scioly text="What is Science Olympiad?" />
+            </Box>
+            <Box
+              paddingLeft="40px"
+              paddingTop="60px"
+              width={["100%", "100%", "50%"]}
+            >
+              <img src={sciolylogo} alt="gnshome" width="80%" />
+              <Center>
+                <Button
+                  as="a"
+                  href="https://www.soinc.org/info/about-science-olympiad"
+                  _hover={{ bg: "brand.900" }}
+                  marginTop="20px"
+                  paddingBottom="3px"
+                  color="white"
+                  bg="brand.100"
+                  marginRight="150px"
+                  width="100px"
+                >
+                  Learn more
+                </Button>
+              </Center>
+            </Box>
+          </Stack>
+          <HStack paddingLeft="16px" paddingTop="50px">
+            <Box width="50%">
+              <img src={gnshome} alt="gnshome" width="80%" />
+            </Box>
+            <Box width="40%">
+              <Text fontSize="40px">Who are we?</Text>
+              <Text fontSize="26px">
+                The Great Neck South Science Olympiad club each year prepare for
+                and compete in various competitions. Through each competition,
+                we develop our knowledge and skill and prepare for regional,
+                state, and national competitions. Our club consists of three
+                teams with 15 members each and provides students with an
+                opportunity to explore the world of science.
+              </Text>
+            </Box>
+          </HStack>
+        </Box>
+      </Center>
     </Box>
   );
 }
