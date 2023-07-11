@@ -16,8 +16,48 @@
   
 }
 
+.input input {
+  width: 30%;
+  height: 100%;
+  background-color: #dbdbdb;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  color: brand.900;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.input textarea {
+  width: 30%;
+  height: 200px;
+  background-color: #dbdbdb;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  color: brand.900;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+.input input::placeholder {
+  color: rgb(138, 138, 138);
+  font-size: 18px;
+}
+.input textarea::placeholder {
+  color: rgb(138, 138, 138);
+  font-size: 18px;
+}
+
+.input input[type="submit"]:hover {
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
 .image img {
-  height: auto;
+  height: 400px;
 }
 
 .hidden {

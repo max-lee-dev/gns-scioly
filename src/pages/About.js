@@ -47,7 +47,7 @@ export default function About() {
               paddingTop="60px"
               width={["100%", "100%", "50%"]}
             >
-              <img src={sciolylogo} alt="gnshome" width="80%" />
+              <img src={sciolylogo} alt="gnshome" width="100%" />
               <Center>
                 <Button
                   as="a"
