@@ -57,7 +57,7 @@
 }
 
 .image img {
-  height: 400px;
+  height: 450px;
 }
 
 .hidden {
@@ -74,6 +74,12 @@
 
 @media(prefer-reduced-motion) {
   .hidden {
+    transition: none;
+  }
+}
+
+@media(prefer-reduced-motion) {
+  .hiddenRight {
     transition: none;
   }
 }

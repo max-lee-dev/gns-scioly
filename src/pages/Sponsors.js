@@ -29,7 +29,7 @@ export default function Sponsors() {
                     textAlign="center"
                     fontWeight={600}
                     color="white"
-                    fontSize="34px"
+                    fontSize="36px"
                   >
                     Sponsor us
                   </Text>
@@ -37,6 +37,7 @@ export default function Sponsors() {
                     <Text
                       textAlign="center"
                       color="white"
+                      paddingTop="20px"
                       width="80%"
                       fontSize="20px"
                     >

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
   Stack,
@@ -9,7 +9,39 @@ import {
   Center,
 } from "@chakra-ui/react";
 
+import { db } from "./components/firebase.js";
+import { addDoc, doc, collection } from "firebase/firestore";
+
 export default function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  function handleChange(event) {
+    const value = event.target.value;
+    if (event.target.name === "name") {
+      setName(value);
+    }
+    if (event.target.name === "email") {
+      setEmail(value);
+    }
+    if (event.target.name === "message") {
+      setMessage(value);
+    }
+  }
+  console.log(name, email, message);
+
+  async function add(e) {
+    const newMessage = await addDoc(collection(db, "messages"), {
+      name: name,
+      email: email,
+      message: message,
+    });
+
+    console.log("Document written with ID: ", newMessage.id);
+
+    e.preventDefault();
+  }
   return (
     <Box paddingTop="50px" className="font">
       <VStack>
@@ -40,11 +72,28 @@ export default function Contact() {
           </Center>
         </Box>
         <Box className="input" a color="brand.900" width="100%">
-          <form>
+          <form onSubmit={add}>
             <VStack>
-              <input type="text" placeholder="Name" />
-              <input type="text" placeholder="Email" />
-              <textarea placeholder="Message"></textarea>
+              <input
+                type="text"
+                name={"name"}
+                value={name}
+                onChange={handleChange}
+                placeholder="Name"
+              />
+              <input
+                type="text"
+                name={"email"}
+                value={email}
+                onChange={handleChange}
+                placeholder="Email"
+              />
+              <textarea
+                placeholder="Message"
+                name={"message"}
+                value={message}
+                onChange={handleChange}
+              ></textarea>
               <input type="submit" value="Send Message" />
             </VStack>
           </form>

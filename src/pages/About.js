@@ -26,15 +26,18 @@ export default function About() {
     });
 
     const hiddenElements = document.querySelectorAll(".hidden");
-
+    const hiddenElements2 = document.querySelectorAll(".hiddenRight");
     hiddenElements.forEach((element) => {
+      observer.observe(element);
+    });
+    hiddenElements2.forEach((element) => {
       observer.observe(element);
     });
   }, []);
   return (
     <Box className="font" color="black">
       <Center>
-        <Box minH="110vh" width="80%">
+        <Box marginTop="20px" minH="110vh" width="80%">
           <Stack
             justifyContent="space-between"
             direction={["column", "column", "row"]}
@@ -57,7 +60,7 @@ export default function About() {
                   paddingBottom="3px"
                   color="white"
                   bg="brand.100"
-                  marginRight="150px"
+                  marginRight="20px"
                   width="100px"
                 >
                   Learn more
@@ -69,7 +72,7 @@ export default function About() {
             <Box width="50%">
               <img src={gnshome} alt="gnshome" width="80%" />
             </Box>
-            <Box width="40%">
+            <Box width="40%" className="hiddenRight">
               <Text fontSize="40px">Who are we?</Text>
               <Text fontSize="26px">
                 The Great Neck South Science Olympiad club each year prepare for
