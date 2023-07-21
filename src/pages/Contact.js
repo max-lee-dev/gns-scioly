@@ -43,7 +43,7 @@ export default function Contact() {
     e.preventDefault();
   }
   return (
-    <Box paddingTop="50px" className="font">
+    <Box minH="80vh" paddingTop="50px" className="font">
       <VStack>
         <Box>
           <Text color="brand.900" fontWeight={600} fontSize="40px">
