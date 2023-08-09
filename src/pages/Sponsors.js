@@ -45,13 +45,19 @@ export default function Sponsors() {
                         fontSize="20px"
                       >
                         {" "}
-                        GNSSO is dedicated to advancing STEM education and
-                        fostering passion in our school and community, creating
-                        an environment where students can pursue their
-                        interests. As a student-run club, extensive funding is
-                        required for competitions, builds, and equipment.
-                        Through the help of sponsors, we can effectively address
-                        financial barriers to create a more effective team.
+                        GNSSO is dedicated to advancing interest and education
+                        in STEM throughout our school and community. As a
+                        student-run club, extensive funding is required for
+                        competitions, builds, and equipment. Through the help of
+                        sponsors, we can effectively address financial barriers,
+                        which allows us to truly focus on our passions for STEM
+                        and become an overall stronger team. Sponsors will also
+                        amplify our potential as ambassadors of STEM education,
+                        assisting us in funding events to share our enthusiasm
+                        and expertise with younger members of the community. If
+                        you are interested in supporting us and making a
+                        donation, please fill out the form below for more
+                        information!
                       </Text>
                       <Button
                         as="a"

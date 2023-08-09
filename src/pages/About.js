@@ -75,12 +75,15 @@ export default function About() {
             <Box width="40%" className="hiddenRight">
               <Text fontSize="40px">Who are we?</Text>
               <Text fontSize="26px">
-                The Great Neck South Science Olympiad club each year prepare for
-                and compete in various competitions. Through each competition,
-                we develop our knowledge and skill and prepare for regional,
-                state, and national competitions. Our club consists of three
-                teams with 15 members each and provides students with an
-                opportunity to explore the world of science.
+                During the year, we study, build, or practice lab procedures
+                related to our events to prepare for competitions. This involves
+                immersing ourselves into specific fields, striving to learn as
+                much as possible or create the best device possible. By using
+                teamwork to solve problems, we promote curiosity and cultivate
+                appreciation for science while pursuing knowledge and honing our
+                skills. We also assist the Great Neck South Middle School
+                Science Olympiad club, building connections with younger
+                students to promote their enthusiasm for STEM.
               </Text>
             </Box>
           </HStack>

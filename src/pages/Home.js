@@ -120,12 +120,14 @@ export default function Home() {
                   <Text fontSize="40px">Meet GNSSO</Text>
                   <Text fontSize="26px">
                     Established in 1986 and based in New York, Great Neck South
-                    Science Olympiad's (GNSSO) mission is to develop students'
-                    knowledge, interests, and passions for science. Over the
-                    years, GNSSO has grown into a close-knit team with a strong
-                    foundation of team spirit and a shared sense of compassion.
-                    Our team has qualified for the state competition since 2010
-                    and has placed top 10 in the state competition since 2016.
+                    Science Olympiad (GNSSO) seeks to develop students' passions
+                    for science, challenging their knowledge through
+                    participation in competitions at the regional, state, and
+                    national level. Our club has 45 members, split into 3 teams.
+                    Over the years, we have grown into a close-knit group with
+                    strong team spirit and camaraderie among members, qualifying
+                    for the state competition since 2010 and placing top 10 in
+                    the state competition since 2016.
                   </Text>
                   <Box width="100%" display="flex" justifyContent={"center"}>
                     <Button
