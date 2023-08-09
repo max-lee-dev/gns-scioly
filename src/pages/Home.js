@@ -127,6 +127,18 @@ export default function Home() {
                     Our team has qualified for the state competition since 2010
                     and has placed top 10 in the state competition since 2016.
                   </Text>
+                  <Box width="100%" display="flex" justifyContent={"center"}>
+                    <Button
+                      _hover={{ bg: "brand.900" }}
+                      bg="brand.100"
+                      as="a"
+                      color="white"
+                      href="/about"
+                      marginTop="20px"
+                    >
+                      Learn More
+                    </Button>
+                  </Box>
                 </Box>
                 <Box
                   paddingLeft="40px"

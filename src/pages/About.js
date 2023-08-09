@@ -55,10 +55,10 @@ export default function About() {
                 <Button
                   as="a"
                   href="https://www.soinc.org/info/about-science-olympiad"
-                  _hover={{ bg: "brand.900" }}
                   marginTop="20px"
                   paddingBottom="3px"
                   color="white"
+                  _hover={{ bg: "brand.900" }}
                   bg="brand.100"
                   marginRight="20px"
                   width="100px"
