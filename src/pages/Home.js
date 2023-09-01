@@ -117,8 +117,10 @@ export default function Home() {
                   paddingTop="10px"
                   width={["100%", "100%", "40%"]}
                 >
-                  <Text fontSize="40px">Meet GNSSO</Text>
-                  <Text fontSize="26px">
+                  <Text textAlign={"center"} fontSize="40px">
+                    Meet GNSSO
+                  </Text>
+                  <Text textAlign={"center"} fontSize="26px">
                     Established in 1986 and based in New York, Great Neck South
                     Science Olympiad (GNSSO) seeks to develop students' passions
                     for science, challenging their knowledge through
@@ -136,7 +138,7 @@ export default function Home() {
                       as="a"
                       color="white"
                       href="/about"
-                      marginTop="20px"
+                      marginTop="10px"
                     >
                       Learn More
                     </Button>

@@ -72,9 +72,11 @@ export default function About() {
             <Box width="50%">
               <img src={gnshome} alt="gnshome" width="80%" />
             </Box>
-            <Box width="40%" className="hiddenRight">
-              <Text fontSize="40px">Who are we?</Text>
-              <Text fontSize="26px">
+            <Box paddingBottom="50px" width="40%" className="hiddenRight">
+              <Text textAlign={"center"} fontSize="40px">
+                Who are we?
+              </Text>
+              <Text textAlign={"center"} fontSize="26px">
                 During the year, we study, build, or practice lab procedures
                 related to our events to prepare for competitions. This involves
                 immersing ourselves into specific fields, striving to learn as

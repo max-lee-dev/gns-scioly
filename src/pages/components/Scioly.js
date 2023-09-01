@@ -5,9 +5,16 @@ function Scioly({ text }, ref) {
     <div ref={ref}>
       <Box ref={ref} paddingLeft="20px">
         <Box color="black" paddingTop="24px">
-          <Text fontSize="40px">What is Science Olympiad?</Text>
+          <Text textAlign={"center"} fontSize="40px">
+            What is Science Olympiad?
+          </Text>
           <Box>
-            <Text paddingRight="5px" paddingTop="10px" fontSize="26px">
+            <Text
+              textAlign={"center"}
+              paddingRight="5px"
+              paddingTop="10px"
+              fontSize="26px"
+            >
               Science Olympiad is a non-profit organization which hosts
               team-based competitions where students demonstrate their
               understanding of STEM (Science, Technology, Engineering, and Math)
