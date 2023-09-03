@@ -128,8 +128,8 @@ export default function Home() {
                     national level. Our club has 45 members, split into 3 teams.
                     Over the years, we have grown into a close-knit group with
                     strong team spirit and camaraderie among members, qualifying
-                    for the state competition since 2010 and placing top 10 in
-                    the state competition since 2016.
+                    for the state competition since 2010 and placing top 3 in
+                    the state competition since 2021.
                   </Text>
                   <Box width="100%" display="flex" justifyContent={"center"}>
                     <Button
