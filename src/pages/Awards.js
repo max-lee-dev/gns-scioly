@@ -23,7 +23,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 export default function Awards() {
   return (
-    <Box className="font" color="black" minH={["410vh", "410vh", "400vh"]}>
+    <Box className="font" color="black" minH={["410vh", "410vh", "350vh"]}>
       <Box display={["none", "none", "block"]}>
         <Component2023 />
 
