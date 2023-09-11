@@ -209,7 +209,7 @@ export default function Component2022() {
       </Box>
       <Box>
         <Center>
-          <Bullet pos={3400} margin={-5} />
+          <Bullet pos={3400} margin={0} />
           <Box
             fontSize="30px"
             top="3390"
