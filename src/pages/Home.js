@@ -41,10 +41,6 @@ const slideImages = [
     url: "https://cdn.discordapp.com/attachments/691735762538070096/1114705654628745287/AJFCJaUDghyoTtZLR8ma9kulGiuuimOMEMz4k1XNeg4Y71kkSzzEcprknlIBAstIGpbXJywePA_gpRQGIfqN3FB52e6analPhAnfPPZhLAiUak0ujMUN4Put31ctfldZUAVUUQaIHKUbwXgE3tRpAoo4VNb8ZQw1249-h937-s-no.png",
     caption: "Slide 6",
   },
-  {
-    url: "https://cdn.discordapp.com/attachments/691735762538070096/1125233865284390932/IMG_0745.jpg",
-    caption: "Slide 8",
-  },
 ];
 
 const divStyle = {

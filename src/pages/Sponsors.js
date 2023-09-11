@@ -72,6 +72,7 @@ export default function Sponsors() {
                     </Center>
                   </Box>
                 </Box>
+                
                 <Box paddingTop="28px" bg="transparent" width="35%">
                   <img src={scioly1} alt="scioly1" />
                 </Box>
