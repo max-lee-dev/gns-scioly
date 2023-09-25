@@ -4,6 +4,13 @@ import scioly from "./components/images/scioly-thumbnail.png";
 import "react-slideshow-image/dist/styles.css";
 
 import Section from "./components/Section";
+import slide1 from "./components/images/slide1.png";
+import slide2 from "./components/images/slide2.png";
+import slide3 from "./components/images/slide3.png";
+import slide4 from "./components/images/slide4.png";
+import slide5 from "./components/images/slide5.png";
+import slide6 from "./components/images/slide6.png";
+
 import { Slide } from "react-slideshow-image";
 
 import {
@@ -18,29 +25,33 @@ import {
 } from "@chakra-ui/react";
 const slideImages = [
   {
-    url: "https://cdn.discordapp.com/attachments/691735762538070096/1114703510454411304/AJFCJaUj3HPPsdwCw0YayOUcW7F3dQwM0UgL3YaEmN3L2rUunBN3Eg3ZLkNtoup5RKdou_PnehXrxEX3-YeT6VsOpOICm5haaQqRF8mbaHSNNKKjYJhlRW37ioMFwURXz5UmwxyE7La8b6gAUKnbRVFfj3dHBgw1249-h937-s-no.png",
+    url: slide1,
     caption: "Slide 1",
   },
-  {
-    url: "https://cdn.discordapp.com/attachments/691735762538070096/1114704094033088532/AJFCJaUKokm7r7VF59q_nUosIVYFkmbU-4vbWCy8bfOhGjt9IQ3IPfu7SwpL3DPpD3E981nqgJAtgdim0RZaDizgGE83iFwqp36kYqjs8T6sDEj23uyByUdJ7-r3iOuCaibOf7dyzRmY8jldiw2koFfQnysUIQw703-h937-s-no.png",
+    {
+    url: slide2,
     caption: "Slide 2",
-  },
-  {
-    url: "https://cdn.discordapp.com/attachments/691735762538070096/1114704286136410232/AJFCJaXvXH9ynu1Aj_XvsQmE5iYAzFN9GXvytHxBQYygNjUaxLmZ-Nql7Xd3tl9sxRc3TIcs5Pqr1_HeGpuK8IQ7TKZ1PQGoqwq-X3gEXLnNFLA1DmeEFuGG_QF645X-LZhzUSAuj6Oi8ANee_r83G82_MwKrww1024-h768-s-no.png",
+    },
+    {
+    url: slide3,
     caption: "Slide 3",
-  },
-  {
-    url: "https://cdn.discordapp.com/attachments/691735762538070096/1114704587274850314/AJFCJaV3vq4grfIEZXOHODV93UWYrB6EnLfFb7dTcDgNMElIkK-U-z8DFcNZVWmybZ-siYLg5Rns1yQu80x5vl6zfULfkzVp-rJaN36f95xI4kA36qnMKDX7K5Ysk5phh5kJWtXxoviLODuWaVoVaKJgoCRxw1249-h937-s-no.png",
+
+    },
+    {
+    url: slide4,
     caption: "Slide 4",
-  },
-  {
-    url: "https://cdn.discordapp.com/attachments/691735762538070096/1114705108916260874/AJFCJaXNIe4Jf2mpMCen-u_BHzpiDze3Q7PbaZT6itNHXCtSDaUwwfMTjvCjIyShtg-Pb6Egfeql_iizOnDKirBtHPguwGNGDl76_8H6GjxSMk8yzU5wlbFtmuPXyLKDPpgNdDGWUxgDSkRAvkeujh5fx630jww1249-h937-s-no.png",
+
+    },
+    {
+    url: slide5,
     caption: "Slide 5",
-  },
-  {
-    url: "https://cdn.discordapp.com/attachments/691735762538070096/1114705654628745287/AJFCJaUDghyoTtZLR8ma9kulGiuuimOMEMz4k1XNeg4Y71kkSzzEcprknlIBAstIGpbXJywePA_gpRQGIfqN3FB52e6analPhAnfPPZhLAiUak0ujMUN4Put31ctfldZUAVUUQaIHKUbwXgE3tRpAoo4VNb8ZQw1249-h937-s-no.png",
+
+    },
+    {
+    url: slide6,
     caption: "Slide 6",
-  },
+
+    }
 ];
 
 const divStyle = {
@@ -104,14 +115,14 @@ export default function Home() {
           </Box>
           <Divider borderWidth="2px" borderColor="#204a97" />
           <Center>
-            <Box paddingTop="100px" width="70%" minH="85vh">
-              <Stack direction={["column", "column", "row"]}>
+            <Box paddingTop="100px" width={['100%', '100%', '100%', '70%', ]} minH="85vh">
+              <Stack direction={["column", "column", "column", "row"]}>
                 <Box
                   className="hidden"
                   color="black"
                   paddingBottom="70px"
                   paddingTop="10px"
-                  width={["100%", "100%", "40%"]}
+                  width={["100%", "100%", "100%", "40%"]}
                 >
                   <Text textAlign={"center"} fontSize="40px">
                     Meet GNSSO
@@ -141,9 +152,9 @@ export default function Home() {
                   </Box>
                 </Box>
                 <Box
-                  paddingLeft="40px"
-                  paddingTop="60px"
-                  width={["100%", "100%", "60%"]}
+
+                  padding={5}
+                  width={["100%", "100%", "100%", "60%"]}
                 >
                   <Slide easing="ease">
                     {slideImages.map((each, index) => (

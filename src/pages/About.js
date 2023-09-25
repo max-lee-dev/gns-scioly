@@ -40,15 +40,15 @@ export default function About() {
         <Box marginTop="20px" minH="110vh" width="80%">
           <Stack
             justifyContent="space-between"
-            direction={["column", "column", "row"]}
+            direction={["column", "column", "column", "row"]}
           >
-            <Box width="47%" className="hidden">
+            <Box width={["100%", "100%", "100%", "47%"]} className="hidden">
               <Scioly text="What is Science Olympiad?" />
             </Box>
             <Box
               paddingLeft="40px"
               paddingTop="60px"
-              width={["100%", "100%", "50%"]}
+              width={["100%", "100%", "100%", "50%"]}
             >
               <img src={sciolylogo} alt="gnshome" width="100%" />
               <Center>
@@ -68,11 +68,12 @@ export default function About() {
               </Center>
             </Box>
           </Stack>
-          <HStack paddingLeft="16px" paddingTop="50px">
-            <Box width="50%">
-              <img src={gnshome} alt="gnshome" width="80%" />
+          <Stack marginTop={10} justifyContent="space-between"
+                 direction={["column", "column", "column", "row"]}>
+            <Box margin={20} width={["100%", "100%", "100%", "50%"]}>
+              <img src={gnshome} alt="gnshome" width="100%" />
             </Box>
-            <Box paddingBottom="50px" width="40%" className="hiddenRight">
+            <Box paddingBottom="50px" width={["100%", "100%", "100%", "40%"]} className="hiddenRight">
               <Text textAlign={"center"} fontSize="40px">
                 Who are we?
               </Text>
@@ -88,7 +89,8 @@ export default function About() {
                 students to promote their enthusiasm for STEM.
               </Text>
             </Box>
-          </HStack>
+
+          </Stack>
         </Box>
       </Center>
     </Box>
