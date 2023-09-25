@@ -50,7 +50,7 @@ export default function Contact() {
     setName("");
     setEmail("");
     setMessage("");
-
+    alert("Message sent!");
 
   }
   return (
