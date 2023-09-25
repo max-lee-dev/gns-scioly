@@ -21,8 +21,8 @@ export default function Sponsors() {
         <Center>
           <Box paddingTop="100px" minH="90vh" width="100%">
             <Center>
-              <Stack spacing={10} direction={["column", "column", "column", "row"]}>
-                <Box marginLeft={15} width={['90%', '90%', '90%', "55%"]}>
+              <Stack spacing={10} direction={["column", "column", "column", "column", "row"]}>
+                <Box marginLeft={15} width={['90%', '90%', '90%','90%', "55%"]}>
                   <Box marginLeft="20px">
                     <Text
                       textAlign="center"
@@ -72,7 +72,7 @@ export default function Sponsors() {
                     </Center>
                   </Box>
                 </Box>
-                <Box padding={20}  bg="transparent" width={['100%', '100%', '100%', "35%"]}>
+                <Box paddingLeft={[0, 0, 0, 60, 0]} bg="transparent" width={['100%', '100%', '100%','80%', "35%"]}>
                   <img src={scioly1} alt="scioly1" />
                 </Box>
               </Stack>
