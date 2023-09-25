@@ -32,6 +32,13 @@ export default function Contact() {
   console.log(name, email, message);
 
   async function add(e) {
+    e.preventDefault();
+
+    if (name === "" || email === "" || message === "") {
+        alert("Please fill out all fields");
+        return;
+    }
+
     const newMessage = await addDoc(collection(db, "messages"), {
       name: name,
       email: email,
@@ -40,7 +47,11 @@ export default function Contact() {
 
     console.log("Document written with ID: ", newMessage.id);
 
-    e.preventDefault();
+    setName("");
+    setEmail("");
+    setMessage("");
+
+
   }
   return (
     <Box minH="80vh" paddingTop="50px" className="font">
