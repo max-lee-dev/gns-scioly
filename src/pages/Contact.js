@@ -54,7 +54,8 @@ export default function Contact() {
 
   }
   return (
-    <Box minH="80vh" paddingTop="50px" className="font">
+    <Center>
+    <Box minH="80vh" paddingTop="50px" className="font" width={'100%'}>
       <VStack>
         <Box>
           <Text color="brand.900" fontWeight={600} fontSize="40px">
@@ -82,11 +83,12 @@ export default function Contact() {
             </Box>
           </Center>
         </Box>
-        <Box className="input" a color="brand.900" width="100%">
+        <Box className="input" color="brand.900" width="100%">
           <form onSubmit={add}>
             <VStack>
               <input
                 type="text"
+                width={'100px'}
                 name={"name"}
                 value={name}
                 onChange={handleChange}
@@ -111,5 +113,6 @@ export default function Contact() {
         </Box>
       </VStack>
     </Box>
+  </Center>
   );
 }

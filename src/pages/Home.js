@@ -115,14 +115,14 @@ export default function Home() {
           </Box>
           <Divider borderWidth="2px" borderColor="#204a97" />
           <Center>
-            <Box paddingTop="100px" width={['100%', '100%', '100%', '100%', '70%', ]} minH="85vh">
+            <Box paddingTop="100px" width={['100%', '100%', '100%', '100%', '80%', ]} minH="85vh">
               <Stack direction={["column", "column", "column","column", "row"]}>
                 <Box
                   className="hidden"
                   color="black"
                   paddingBottom="70px"
                   paddingTop="10px"
-                  width={["100%", "100%", "100%","100%", "40%"]}
+                  width={["100%", "100%", "100%","100%", "50%"]}
                 >
                   <Text textAlign={"center"} fontSize="40px">
                     Meet GNSSO
@@ -154,7 +154,7 @@ export default function Home() {
                 <Box
 
                   padding={5}
-                  width={["100%", "100%", "100%","100%", "60%"]}
+                  width={["100%", "100%", "100%","100%", "50%"]}
                 >
                   <Slide easing="ease">
                     {slideImages.map((each, index) => (
