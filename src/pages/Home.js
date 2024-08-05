@@ -10,13 +10,8 @@ import slide3 from "./components/images/slide3.png";
 import slide4 from "./components/images/slide4.png";
 import slide5 from "./components/images/slide5.png";
 import slide6 from "./components/images/slide6.png";
-import yahao1 from "./components/images/yahao1.JPG";
-import yahao2 from "./components/images/yahao2.jpg";
-import yahao3 from "./components/images/yahao3.jpg";
-import yahao4 from "./components/images/yahao4.JPG";
 
-
-import { Slide } from "react-slideshow-image";
+import Slideshow from "./components/Slideshow";
 
 import {
   Box,
@@ -59,25 +54,6 @@ const slideImages = [
     }
 ];
 
-const yahaoSlideImages = [
-  {
-    url: yahao1,
-    caption: "Slide 1",
-  },
-  {
-    url: yahao2,
-    caption: "Slide 2",
-
-  },
-  {
-    url: yahao3,
-    caption: "Slide 3",
-  },
-  {
-    url: yahao4,
-    caption: "Slide 4",
-  }
-  ];
 
 const divStyle = {
   paddingTop: "56.25%",
@@ -143,7 +119,7 @@ export default function Home() {
           </Box>
           <Divider borderWidth="2px" borderColor="#204a97" />
           <Center>
-            <Box paddingTop={[12, 8, 4]} width={['100%', '100%', '100%', '84%']} >
+            <Box pb={10} paddingTop={[12, 8, 4]} width={['100%', '100%', '100%', '84%']} >
               <Stack direction={["column", "column", "column","column", "row"]}>
                 <Box
                   className="hidden"
@@ -183,56 +159,10 @@ export default function Home() {
                   px={2}
                   width={["100%", "100%", "100%","100%", "50%"]}
                 >
-                  <Slide easing="ease">
-                    {slideImages.map((each, index) => (
-                      <div key={index} className="each-slide">
-                        <div
-                          style={{
-                            ...divStyle,
-                            backgroundImage: `url(${each.url})`,
-                          }}
-                        ></div>
-                      </div>
-                    ))}
-                  </Slide>
+                  <Slideshow type={"scioly"} />
                 </Box>
               </Stack>
             </Box>
-          </Center>
-          <Center>
-          <VStack pb={20} pt={[16, 16, 16]} width={['100%', '100%', '100%', '84%']}>
-            <Text px={2} textAlign={'center'} color={'black'}>
-              <Text as={'span'} fontWeight={500} fontSize="30px">
-                Thank you{" "}
-              </Text>
-              <Text color={"gold.100"} as={'span'} fontWeight={800} fontSize="30px">
-                Yahao
-              </Text>
-              <Text as={'span'} fontWeight={500} fontSize="30px">
-                {" "}for sponsoring our community
-              </Text>
-            </Text>
-            <Box
-              pt={[0, 4, 2]}
-              px={2}
-              width={["100%", "100%", "100%","100%", "50%"]}
-            >
-              <Slide easing="ease">
-                {yahaoSlideImages.map((each, index) => (
-                  <div key={index} className="each-slide">
-                    <div
-                      style={{
-                        ...divStyle,
-                        height: "350px",
-                        borderRadius: "15px",
-                        backgroundImage: `url(${each.url})`,
-                      }}
-                    ></div>
-                  </div>
-                ))}
-              </Slide>
-            </Box>
-            </VStack>
           </Center>
         </Box>
       </Box>
