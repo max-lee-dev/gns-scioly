@@ -10,6 +10,11 @@ import slide3 from "./components/images/slide3.png";
 import slide4 from "./components/images/slide4.png";
 import slide5 from "./components/images/slide5.png";
 import slide6 from "./components/images/slide6.png";
+import yahao1 from "./components/images/yahao1.JPG";
+import yahao2 from "./components/images/yahao2.jpg";
+import yahao3 from "./components/images/yahao3.jpg";
+import yahao4 from "./components/images/yahao4.JPG";
+
 
 import { Slide } from "react-slideshow-image";
 
@@ -54,13 +59,36 @@ const slideImages = [
     }
 ];
 
+const yahaoSlideImages = [
+  {
+    url: yahao1,
+    caption: "Slide 1",
+  },
+  {
+    url: yahao2,
+    caption: "Slide 2",
+
+  },
+  {
+    url: yahao3,
+    caption: "Slide 3",
+  },
+  {
+    url: yahao4,
+    caption: "Slide 4",
+  }
+  ];
+
 const divStyle = {
+  paddingTop: "56.25%",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  backgroundSize: "cover",
-  height: "500px",
+  backgroundSize: "100%",
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "center",
   width: "100%",
+  margin: "auto",
   borderRadius: "15px",
 };
 
@@ -101,7 +129,7 @@ export default function Home() {
                   textAlign={"center"}
                   paddingTop={[35, 35, "100px"]}
                   fontSize={["28px", "28px", "50px"]}
-                  fontWeight="700"
+                  fontWeight={700}
                 >
                   Great Neck South
                   <Text display={["none", "none", "initial"]}>
@@ -115,19 +143,18 @@ export default function Home() {
           </Box>
           <Divider borderWidth="2px" borderColor="#204a97" />
           <Center>
-            <Box paddingTop="100px" width={['100%', '100%', '100%', '100%', '80%', ]} minH="85vh">
+            <Box paddingTop={[12, 8, 4]} width={['100%', '100%', '100%', '84%']} >
               <Stack direction={["column", "column", "column","column", "row"]}>
                 <Box
                   className="hidden"
                   color="black"
-                  paddingBottom="70px"
-                  paddingTop="10px"
+                  paddingTop={[2, 4, 6]}
                   width={["100%", "100%", "100%","100%", "50%"]}
                 >
-                  <Text textAlign={"center"} fontSize="40px">
+                  <Text textAlign={"center"} fontWeight={600} fontSize="36px">
                     Meet GNSSO
                   </Text>
-                  <Text textAlign={"center"} fontSize="26px">
+                  <Text textAlign={"center"} px={[4,12,0]} fontSize="20px">
                     Established in 1986 and based in New York, Great Neck South
                     Science Olympiad (GNSSO) seeks to develop students' passions
                     for science, challenging their knowledge through
@@ -152,8 +179,8 @@ export default function Home() {
                   </Box>
                 </Box>
                 <Box
-
-                  padding={5}
+                  pt={10}
+                  px={2}
                   width={["100%", "100%", "100%","100%", "50%"]}
                 >
                   <Slide easing="ease">
@@ -171,6 +198,41 @@ export default function Home() {
                 </Box>
               </Stack>
             </Box>
+          </Center>
+          <Center>
+          <VStack pb={20} pt={[16, 16, 16]} width={['100%', '100%', '100%', '84%']}>
+            <Text px={2} textAlign={'center'} color={'black'}>
+              <Text as={'span'} fontWeight={500} fontSize="30px">
+                Thank you{" "}
+              </Text>
+              <Text color={"gold.100"} as={'span'} fontWeight={800} fontSize="30px">
+                Yahao
+              </Text>
+              <Text as={'span'} fontWeight={500} fontSize="30px">
+                {" "}for sponsoring our community
+              </Text>
+            </Text>
+            <Box
+              pt={[0, 4, 2]}
+              px={2}
+              width={["100%", "100%", "100%","100%", "50%"]}
+            >
+              <Slide easing="ease">
+                {yahaoSlideImages.map((each, index) => (
+                  <div key={index} className="each-slide">
+                    <div
+                      style={{
+                        ...divStyle,
+                        height: "350px",
+                        borderRadius: "15px",
+                        backgroundImage: `url(${each.url})`,
+                      }}
+                    ></div>
+                  </div>
+                ))}
+              </Slide>
+            </Box>
+            </VStack>
           </Center>
         </Box>
       </Box>
